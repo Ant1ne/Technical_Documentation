@@ -1,0 +1,33 @@
+@media only screen and (min-width: 700px) {
+    body {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+html {
+    font-family: tahoma, sans-serif;
+}
+
+body {
+    background-color: #FFF3DA;
+}
+
+#navbar {
+    float: left;
+}
+
+code, pre {
+    font-family: 'Nova Mono', monospace;
+}
+
+section {
+    margin: 30px;
+}
+
+.card {
+    padding: 30px;
+    background-color: #96B6C5;
+    border-radius: 30px;
+    box-shadow: 10px 10px #EEE0C9;
+}

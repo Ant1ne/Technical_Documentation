@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>A complete guide on Flexbox</title>
+</head>
+<body>
+    <div class="card">
+    <h1>A complete guide on Flexbox</h1>
+        <nav id="navbar">
+            <header>
+                <p>
+                    This is an overview of how to use Flexbox in your day-to-day CSS programming!
+                </p>
+            </header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#How_to_enable_Flexbox" class="nav-link">How to enable Flexbox</a></li>
+                <li><a href="#Row_vs_Column_layouts" class="nav-link">Row vs Column layouts</a></li>
+                <li><a href="#Alignment" class="nav-link">Alignment</a></li>
+                <li><a href="#Spacing" class="nav-link">Spacing</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section card">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+                <p>
+                    Flexbox is a tool built into CSS, meant for customising complex layouts of elements within.
+                </p>
+                <p>
+                    Fun fact: before Flexbox, a lot of custom layouts in websites were done in a few ways:
+                </p>
+                <p>
+                    Way back then, we used <code>float</code> property for having complex elements alignments. This proved to be pretty tricky when responsive layouts became needed!
+                </p>
+                <p>
+                    We also used to have complex layouts using the <code>&lt;table&gt;</code> element! This was also tricky as conforming with semantic HTML became more prevalent.
+                </p>
+        </section>
+        <section id="How_to_enable_Flexbox" class="main-section card">
+            <header>
+                <h2>How to enable Flexbox</h2>
+            </header>
+                <p>
+                    Enable Flexbox with the following CSS property
+                </p>
+                <pre>
+                    #element {
+                        display: flex;
+                    }
+                </pre>
+        </section>
+        <section id="Row_vs_Column_layouts" class="main-section card">
+            <header>
+                <h2>Row vs Column layouts</h2>
+            </header>
+                <p>
+                    Layouts are declared using the following property:
+                </p>
+                <pre>
+                    flex-direction:
+                </pre>
+                <p>
+                    There are four options for row and column layouts, being left-to-right, right-to-left, top-to-bottom, and bottom-to-top:
+                </p>
+                <p>
+                    left-to-right: <code>row</code>
+                </p>
+        </section>
+        <section id="Alignment" class="main-section card">
+            <header>
+                <h2>Alignment</h2>
+            </header>
+                <p>
+                    Flexbox alignments are declared using the following CSS property:
+                </p>
+                <pre>
+                    justify-content:
+                </pre>
+                <p>
+                    There are six values for these:
+                </p>
+                <ul>
+                    <li>Everything aligned to the left:
+                        <code>flex-start</code>
+                    </li>
+                    <li>Everything aligned to the right:
+                        <code>flex-end</code>
+                    </li>
+                    <li>Everything aligned to the center:
+                        <code>center</code>
+                    </li>
+                    <li>Everything aligned with space between each other:
+                        <code>space-between</code>
+                    </li>
+                </ul>
+        </section>
+        <section id="Spacing" class="main-section card">
+            <header>
+                <h2>Spacing</h2>
+            </header>
+                <p>
+                    Flexbox spacing is declared using the following CSS properties:
+                </p>
+                <ul>
+                    <li><code>gap: `SINGLE VALUE`</code></li>
+                    <li><code>gap: `ROW` `COLUMN`</code></li>
+                    <li><code>raw-gap:</code></li>
+                    <li><code>column-gap:</code></li>
+                </ul>
+        </section>
+    </main>
+</body>
+</html>
